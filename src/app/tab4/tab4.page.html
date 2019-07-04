@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Slider
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides class="img-slider" loop="true" slidesPerView="2" justify-content-center align-items-center> 
+    <ion-slide *ngFor="let image of [1,2,3,4,5,6,7,8,9,10,11,12,13,14]">
+      <img src="/assets/img/{{image}}.jpg" class="thumb-img">
+    </ion-slide>
+  </ion-slides>
+</ion-content>
